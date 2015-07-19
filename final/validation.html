@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 
+ TITLE: N341 Final Project: validation test
+ AUTHOR: Cplew
+ CREATE DATE: 11/30/14
+ PURPOSE: Takes user i//nput and logs and keeps a record of student projects.
+ LAST MODIFIED ON: 12/4/2014
+ LAST MODIFIED BY: cplew
+ MODIFICATION HISTORY: 12/4/2014
+-->
+<!-- decided to add multifield scraping too becuase, why not.. -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Final Validation</title>
+<script src="valid/lib/jquery-1.11.1.js"></script>
+<script src="valid/dist/jquery.validate.js"></script>
+<script src="validation.js"></script>
+</head>
+
+<body>
+<!-- im gonna keep this simple as possible -->
+
+<h1> make your choice! the pointless survey! </h1>
+<p> then press submit </p>
+<form id="myForm" name="myform" method="get">
+	  <p>
+      	<label>
+        	<input type="text" name="tfield" id="name" placeholder="name" class="required" />
+            Your name</label><br>
+        <label>
+        	<input type="email" name="efield" id="email" placeholder="johnd@somewhere.com"/> Email
+            </label><br>
+        <label>
+        	<input type="tel" name="tel" id="tel" placeholder="000000000 no dashes"/> Phone
+            </label><br>
+	  
+        <label>
+	      <input type="checkbox" name="check" value="red" id="red"/>
+	      You like red</label>
+	    <br>
+	    <label>
+	      <input type="checkbox" name="check" value="blue" id="blue"/>
+	      you like blue</label>
+	    <br>
+	    <label>
+	      <input type="checkbox" name="check" value="green" id="green"/>
+	      you like green</label>
+	    <br>
+	    <label>
+	      <input type="checkbox" name="check" value="yellow" id="yellow"/>
+	      you like yellow</label>
+	    <br>
+  </p>
+  <input type="reset" value="Reset"/><br>
+  <input type="submit" id="sub"/>
+</form>
+<div id="post"> here thar be a placeholder
+</div>
+</body>
+</html>

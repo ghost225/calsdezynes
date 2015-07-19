@@ -1,0 +1,330 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>cplew final n341</title>
+	<link href="default.css" rel="stylesheet">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+
+<h1> due dates</h1>
+
+<div class="ui-widget">
+	<p>This page is intended to act as a kind of scheduleing program that allows users to input the deatils of upcoming projects and warn them about impeding due dates, using cookies to allow data storgage</p>
+</div>
+
+<h1>WIP</h1>
+
+
+<!-- Accordion -->
+<h2 class="demoHeaders">urgent due dates</h2>
+<div id="accordion">
+	<h3>First</h3>
+	<div>this section will containt the info of the thre nearst due dates and the proejcts/Hw for it</div>
+	<h3>Second</h3>
+	<div>jquery will be used to pull read and write to cookies</div>
+	<h3>Third</h3>
+	<div>i may or may not try and encrypt them as time allows</div>
+</div>
+
+
+<!-- Autocomplete -->
+<h2 class="demoHeaders">Search for project name</h2>
+<div>
+	<input id="autocomplete" title="type &quot;a&quot;">
+</div>
+
+
+
+<!-- Button -->
+<h2 class="demoHeaders">refresh listings</h2>
+<button id="button">Refresh</button>
+<form style="margin-top: 1em;">
+	<div id="radioset">
+		<input type="radio" id="radio1" name="radio"><label for="radio1"> Homework</label>
+		<input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Exam</label>
+		<input type="radio" id="radio3" name="radio"><label for="radio3">Quiz</label>
+	</div>
+</form>
+
+
+
+<!-- Tabs -->
+<h2 class="demoHeaders">projects with highest priority</h2>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Priority 1</a></li>
+		<li><a href="#tabs-2">Prioirty 2</a></li>
+		<li><a href="#tabs-3">Priority 3</a></li>
+	</ul>
+	<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+	<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+	<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+</div>
+
+
+<input name="Test 1" type="checkbox" value="choice 1" id="check1">
+<input name="Test 2" type="checkbox" value="choice 2" id="check2">
+<input name="Test 13" type="checkbox" value="choice 3" id="check3">
+
+<form name="form1" method="post">
+  <p>
+    <label>
+      <input type="checkbox" name="choiceTest" value="checkbox" id="choiceTest_0">
+      test1</label>
+    <br>
+    <label>
+      <input type="checkbox" name="choiceTest" value="checkbox" id="choiceTest_1">
+      test2</label>
+    <br>
+  </p>
+  <input type="reset" id="res">
+</form>
+
+
+<br><label> <input type="url" id="url"> Url</label>
+<br><label>  <input type="password" id="pass">Password field</label>
+<br><label>  <input type="email" id="email" value="email">email</label>
+<br><label>  <input type="tel" id="telly" value="xxx-xxx-xxxx"> Phone Numer </label>
+
+<!--- Slider -->
+<h2 class="demoHeaders"> intended times to work on this project</h2>
+<div id="slider"></div>
+
+
+
+<!-- Datepicker -->
+<h2 class="demoHeaders">Due date of project</h2>
+<div id="datepicker"></div>
+
+
+
+<!-- Progressbar -->
+<h2 class="demoHeaders">Percent completed</h2>
+<div id="progressbar"></div>
+
+
+
+<!-- Progressbar -->
+<h2 class="demoHeaders">Selectmenu</h2>
+<select id="selectmenu">
+	<option>Slower</option>
+	<option>Slow</option>
+	<option selected="selected">Medium</option>
+	<option>Fast</option>
+	<option>Faster</option>
+</select>
+
+
+
+<!-- Spinner -->
+<h2 class="demoHeaders">Select percent completed for this project</h2>
+<input id="spinner">
+
+
+
+<!-- Menu -->
+<h2 class="demoHeaders">Menu</h2>
+<ul style="width:100px;" id="menu">
+	<li>new Project</li>
+	<li>edit projects</li>
+	<li>View current
+		<ul>
+			<li>Exams</li>
+			<li>papers</li>
+			<li>Homework</li>
+			<li>Quiz</li>
+			<li>other</li>
+		</ul>
+	</li>
+	
+</ul>
+
+
+
+<!-- Tooltip -->
+<h2 class="demoHeaders">Tooltip</h2>
+<p id="tooltip">
+	<a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
+</p>
+
+
+<!-- Highlight / Error -->
+<h2 class="demoHeaders">Highlight / Error</h2>
+<div class="ui-widget">
+	<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+		<strong>Hey!</strong> Sample ui-state-highlight style.</p>
+	</div>
+</div>
+<br>
+<div class="ui-widget">
+	<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+		<strong>Alert:</strong> Sample ui-state-error style.</p>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+
+var availableTags = [
+	"ActionScript",
+	"AppleScript",
+	"Asp",
+	"BASIC",
+	"C",
+	"C++",
+	"Clojure",
+	"COBOL",
+	"ColdFusion",
+	"Erlang",
+	"Fortran",
+	"Groovy",
+	"Haskell",
+	"Java",
+	"JavaScript",
+	"Lisp",
+	"Perl",
+	"PHP",
+	"Python",
+	"Ruby",
+	"Scala",
+	"Scheme"
+];
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>

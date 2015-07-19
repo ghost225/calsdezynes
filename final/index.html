@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!-- 
+ TITLE: N341 Final Project: Assignment planner
+ AUTHOR: Cplew
+ CREATE DATE: 11/30/14
+ PURPOSE: Takes user input and logs and keeps a record of student projects.
+ LAST MODIFIED ON: 12/12/14
+ LAST MODIFIED BY: cplew
+ MODIFICATION HISTORY: 11/30/14 creation: 12/8/14 validtion and JS:  12/11/14: Got everything working!
+ 
+ KNOWN ISSUES: The date comparison will not render properly, past assignments work, but if the assignment is due to day it is not written to the page.
+-->
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>N341 Final</title>
+		
+	</head>
+	<body>
+	<header>
+		<link  href="default.css" rel="stylesheet">
+        <h1> Student Assignment Planner</h1>
+		<div id="top">
+        <p style="color:#06C"> N341 Final Project </p>
+        <p style="color:#F00"> This page makes use of cookies to allow persistent data for users, please make sure that you have cookies enabled for this page!</p>
+		<p id="footnote"> cplew@iupui.edu </p>
+        <br>
+        <br>
+        </div>
+	</header>
+    <div id="zone">
+    <!-- this h1 will be replaced using javascript if a returning user.-->
+    <div id="welcome">
+    <h1>Welcome! Please create a new user profile <br></h1>
+    <form id="newuser">
+    <input name='user' id='user' placeholder='username for this computer'><br>
+    <input type="radio" name="colorpicker" id="colorpicker1" value="default.css">Default page colors<br>
+    <input type="radio" name="colorpicker" id="colorpicker2" value="../final/iupui/ui/iupui.css">IUPUI page colors<br>
+    <input type="radio" name="colorpicker" id="colorpicker3" value="../final/purdue/ui/purdue.css">PURDUE page colors<br>
+    <input type="radio" name="colorpicker" id="colorpicker4" value="../final/indianau/ui/IU.css">IU page colors<br>
+    <input type='submit' value='Submit' id="subuser">
+    </form>
+    </div>
+	<div id="tabs">
+    	<ul>
+        	
+        	<li><h3><a href="#one">Current Assignments</a></h3></li>
+            <li><h3><a href="#two">Add New Assignments</a></h3></li>
+            <li><h3><a href="#three">Past Assignments</a></h3></li>
+        	<li><h3><a href="#four">Due Today!</a></h3></li>
+       </ul>
+    <div id="one">
+    <!--project tabs-->
+    
+		<div id="accordion">
+			<h3> Assignments</h3>
+				<div id="assignTab"><h2>Assignments</h2></div>
+			<h3> Quizzes </h3>
+				<div id="quizTab"> <h2>Quiz</h2></div>
+			<h3> Tests </h3>
+				<div id="testTab"><h2>Tests</h2> </div>
+	
+    	</div>
+    </div>
+    
+    
+    
+    <div id="two"> 
+    <!-- create project forms-->
+    <form id="create" name="create" method="get">
+	   Project Name <input type="text" placeholder="Project Name" id="pName" name="pName"> <br>
+      
+       Project Due Date <input id="duedate" name="duedate"> <br>
+      
+       Project Type 
+         <p>
+         <select id="typeSelect" name="typeSelect" title="Select a project type">
+         	<option value="">...</option>
+         	<option value="Homework">Homework</option>
+            <option value="Quiz"> Quiz</option>
+            <option value="Test/Exam">Test/Exam</option>
+         </select><br>
+         </p>
+       
+       Instructors Name <input type="text" placeholder="Instructor" id="iName" name="iName"> <br>
+       
+       Instructors Email <input type="email" placeholder="optional@optional.com" name="iEmail" id="iEmail"> <span style="color:#09C"> optional </span><br> 
+       
+       Instructors Phone <input type="tel" placeholder="0000000000" name="iTel" id="iTel"><span style="color:#09C"> optional </span><br> 
+       
+       Project Description <br><textarea name="pdes" placeholder="Describe the project" cols="50" rows="5" id="pdes"></textarea><br>
+       <input type="reset" name="reset" id="reset" value="reset">
+       <input type="submit" value="submit" id="submit">
+       </form>
+       
+       <!--this is to test validation and scraping-->
+       <div id="output"></div>
+</div>
+    <div id="three"> 
+    <!-- project history may go here-->
+    
+    
+    <div id="four">
+    <!--current assignments-->
+    
+    
+    </div>
+    </div>
+	</div>
+	</div>
+    
+    <footer>
+    <input type="button" id="clear" value="Reset Profile"/> End of the Semester? Click Here to wipe your Profile and start a new planner!<br>
+    <p style="font-size:10px"> <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fcs.iupui.edu%2F~cplew%2Fn341%2Ffinal%2Findex.html">HTML5 Compliant!</a></p>
+    <input id="spinner"/> Please rate our Page!
+    </footer>
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="jqueryui/jquery-ui.js"></script>
+    <script src="valid/dist/jquery.validate.js"></script>
+	<script src="final.js"></script>
+	
+	
+	</body>
+</html>
